@@ -1,0 +1,104 @@
+@media only screen and (max-width: 508px){
+    .heading__primary{
+        font-size: 2.8rem;
+        font-weight: 700;
+        color: #fcfcfc;
+        margin: 5rem;
+        margin-top: 10rem;
+    }
+
+    .container{
+        max-width: 40rem;
+        font-size: 1.6rem;
+    }
+
+    .todo__input{
+        font-size: 2rem;
+        
+    }
+
+    .btn{
+        font-size: 2rem;
+    }
+
+    .icon{
+        font-size: 1.8rem;
+    }
+
+    input[type="checkbox"].checkbox {
+        font-size: 2.4rem;
+        border-radius: 50%;
+        width: 2.4rem;
+        height: 2.4rem;
+        appearance: none;
+        background-color: #fcfcfc;
+        border: 2px solid #444;
+        cursor: pointer;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 419px){
+    .heading__primary{
+        font-size: 2.4rem;
+        font-weight: 700;
+        color: #fcfcfc;
+        margin: 5rem;
+        margin-top: 10rem;
+    }
+
+    .container{
+        max-width: 34rem;
+        font-size: 1.3rem;
+    }
+
+    .todo__input{
+        font-size: 1.4rem;
+        
+    }
+
+    .list{
+        text-decoration: none;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fcfcfc;
+        margin-bottom: 1.5rem;
+        padding: 1.5rem;
+        border-radius: 9px;
+        color: #444;
+    }
+
+    .btn{
+        font-size: 1.6rem;
+    }
+
+    .icon{
+        font-size: 1.2rem;
+    }
+
+    input[type="checkbox"].checkbox {
+        font-size: 2rem;
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+        appearance: none;
+        background-color: #fcfcfc;
+        border: 2px solid #444;
+        cursor: pointer;
+        position: relative;
+    }
+
+    input[type="checkbox"].checkbox:checked::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 4px;
+        height: 9px;
+        border: solid #fcfcfc;
+        border-width: 0 2px 2px 0;
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+}

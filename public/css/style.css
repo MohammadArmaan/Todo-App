@@ -1,0 +1,159 @@
+*{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #444;
+
+}
+
+.heading__primary{
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #fcfcfc;
+    margin: 5rem;
+    margin-top: 10rem;
+    text-transform: uppercase;
+}
+
+.container{
+    width: 50rem;
+    background-color: transparent;
+    border-radius: 9px;
+    font-size: 1.6rem;
+}
+
+.form__todo{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.todo__input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fcfcfc;
+    color: #fff;
+    font-weight: 500;
+    font-size: 2.4rem;
+    width: 70%;
+    
+}
+
+.todo__input:focus{
+    padding: 0.2rem;
+    border-bottom: 2px solid #fcfcfc;
+    width: 80%;
+
+}
+
+.todo__input::placeholder{
+    color: #ccc;
+}
+
+.btn{
+    border: none;
+    background-color: #fcfcfc;
+    text-transform: uppercase;
+    color: #444;
+    padding: 1rem 2rem;
+    border-radius: 9px;
+    font-size: 2.4rem;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+.btn:hover
+.btn:visited,
+.btn:active{
+    background-color: #e4e4e4;
+
+}
+
+.hidden{
+    display:none;
+
+}
+
+ul{
+    margin-top: 2rem;
+}
+
+.list{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fcfcfc;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 9px;
+    color: #444;
+}
+
+.text-and-checkbox{
+    display: flex;
+    gap: 2rem;
+
+}
+
+input[type="checkbox"].checkbox {
+    font-size: 2.6rem;
+    border-radius: 50%;
+    width: 2.6rem;
+    height: 2.6rem;
+    appearance: none;
+    background-color: #fcfcfc;
+    border: 2px solid #444;
+    cursor: pointer;
+    position: relative;
+}
+  
+input[type="checkbox"].checkbox:checked {
+    background-color: #444;
+    border-color: #444;
+}
+
+input[type="checkbox"].checkbox:checked::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 6px;
+    height: 12px;
+    border: solid #fcfcfc;
+    border-width: 0 2px 2px 0;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+.list__icons{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.icon{
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: #444;
+    color: #fcfcfc;
+    padding: 0.7rem;
+    border-radius: 50%;
+}

@@ -1,0 +1,33 @@
+doctype html 
+html 
+    head 
+        block head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        link(rel='stylesheet' href='/css/style.css')
+        link(rel='stylesheet' href='/css/queries.css')
+        link(rel='shortcut icon' type='image/png' href='/img/favicon.png')
+        script(type="module" src='https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js')
+        script(nomodule src='https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js')
+        link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:300,300i,400,500,700')
+        title Todo App 
+    
+    body
+        h1.heading__primary Add Your To do's!
+        div(class="container")
+            form.form__todo
+                input.todo__input(type="text" placeholder="Add your todo")
+                button.btn.add__todo(type='submit') Add 
+                button.btn.update__todo.hidden(type='submit') Update
+            ul
+                each todo in todos
+                    li.list
+                        div.text-and-checkbox
+                            input(type="checkbox" class='checkbox' checked=todo.completed data= todo.id)
+                            span.todo__list= todo.todo
+                        div.list__icons
+                            ion-icon(name='create-outline' class='icon update' data= todo.id)
+                            ion-icon(name='trash-outline' class='icon delete' data= todo.id)
+
+
+        script(src='/js/bundle.js')
