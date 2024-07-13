@@ -32,7 +32,7 @@ Contributions are welcome! Please fork the repository and create a pull request 
 
 ## Live Demo
 
-Check out the live demo of the Nisal Tours: [Todo APP](https://nisal-tours.vercel.app/)
+Check out the live demo of the Nisal Tours: [Todo APP](https://todo-app-nisal-utilities.vercel.app/)
 
 ## Developer
 
