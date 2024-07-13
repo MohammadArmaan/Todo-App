@@ -3,9 +3,12 @@ const express = require('express');
 const path = require('path');
 const cors = require('cors')
 const morgan = require('morgan')
+const cookieParser = require('cookie-parser')
 
 const todoRoutes = require('./routes/todoRoutes');
 const viewRoutes = require('./routes/viewRoutes');
+const userRoutes = require('./routes/userRoutes');
+
 
 const app = express();
 
@@ -21,8 +24,20 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(express.json());
 
+app.use(cookieParser())
+
+
 app.use('/', viewRoutes);
 app.use('/api/v1/todo', todoRoutes);
+app.use('/api/v1/users', userRoutes);
 
+app.use((req, res, next) => {
+    const status = 404;
+    const error = 'Page Not Found';
+    res.status(status).render('error', {
+        error,
+        status
+    });
+});
 
 module.exports = app;

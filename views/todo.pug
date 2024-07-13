@@ -1,0 +1,21 @@
+extends base
+
+block content
+    main.main
+        section.section
+            h1.heading__primary= `${user.name} Add Your To do's!`
+            div(class="container")
+                form.form__todo
+                    input.todo__input(type="text" placeholder="Add your todo")
+                    button.btn.add__todo(type='submit') Add 
+                    button.btn.update__todo.hidden(type='submit') Update
+                ul
+                    each todo in todos
+                        li.list
+                            div.text-and-checkbox
+                                input(type="checkbox" class='checkbox' checked=todo.completed data= todo.id)
+                                span.todo__list= todo.todo
+                            div.list__icons
+                                ion-icon(name='create-outline' class='icon update' data= todo.id)
+                                ion-icon(name='trash-outline' class='icon delete' data= todo.id)
+                                

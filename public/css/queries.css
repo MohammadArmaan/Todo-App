@@ -1,8 +1,12 @@
+:root{
+    --dark-color: #000;
+    --bright-color: #fff
+}
 @media only screen and (max-width: 508px){
     .heading__primary{
-        font-size: 2.8rem;
+        font-size: 2.4rem;
         font-weight: 700;
-        color: #fcfcfc;
+        color: var(--bright-color);
         margin: 5rem;
         margin-top: 10rem;
     }
@@ -31,18 +35,101 @@
         width: 2.4rem;
         height: 2.4rem;
         appearance: none;
-        background-color: #fcfcfc;
-        border: 2px solid #444;
+        background-color: var(--dark-color);
+        border: 2px solid var(--bright-color);
         cursor: pointer;
         position: relative;
     }
+
+    .footer{
+        font-size: 1rem;
+    }
+
+    .website__link:link,
+    .website__link:active,
+    .website__link:visited{
+    color: var(--bright-color);
+
+    font-size: 1rem;
+    }
+    
+    .login__form,
+    .signup__form,
+    .forgetPassword__form,
+    .resetPassword__form{
+        width: 40rem;
+        font-size: 1.4rem;
+    }
+    
+    
+    .heading__secondary{
+        font-size: 2rem;
+    }
+
+    .form__input{
+        padding: 0.5rem;
+        font-size: 1.4rem;
+    
+    }
+    
+    .form__link:link,
+    .form__link:hover,
+    .form__link:active,
+    .form__link:visited{
+        font-size: 1.2rem;
+    }
+
+    .form__group{
+        margin: 3rem;
+        margin-top: 4rem;
+    }
+    
+    .error__status{
+        font-size: 4rem;
+
+    }
+    
+    .error__msg{
+        font-size: 1.5rem;
+    }
+    
+    
+    .hr-separator {         
+        height: 7rem;          
+    }
+
+    .alert {
+        top: 5%;
+        left: 50%;
+        border-radius: 5px;
+        font-size: 1.4rem;
+        padding: 1rem 5rem;
+        }
+
+        .header{
+            height: 6rem;
+            margin: 2rem 4rem 0 0;
+            color: var(--bright-color);
+            font-size: 1.4rem;
+        }
+        
+        .nav__links:link,
+        .nav__links:active,
+        .nav__links:visited{
+            font-size: 1.4rem;
+        }
+
+        .login__warning{
+            font-size: 1.8rem;
+        }
+        
 }
 
 @media only screen and (max-width: 419px){
     .heading__primary{
-        font-size: 2.4rem;
+        font-size: 2rem;
         font-weight: 700;
-        color: #fcfcfc;
+        color: var(--bright-color);
         margin: 5rem;
         margin-top: 10rem;
     }
@@ -63,11 +150,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: #fcfcfc;
+        background-color: var(--dark-color);
         margin-bottom: 1.5rem;
         padding: 1.5rem;
         border-radius: 9px;
-        color: #444;
+        color: var(--bright-color);
     }
 
     .btn{
@@ -84,8 +171,8 @@
         width: 2rem;
         height: 2rem;
         appearance: none;
-        background-color: #fcfcfc;
-        border: 2px solid #444;
+        background-color: var(--dark-color);
+        border: 2px solid var(--bright-color);
         cursor: pointer;
         position: relative;
     }
@@ -97,8 +184,76 @@
         left: 50%;
         width: 4px;
         height: 9px;
-        border: solid #fcfcfc;
+        border: solid var(--dark-color);
         border-width: 0 2px 2px 0;
         transform: translate(-50%, -50%) rotate(45deg);
       }
+
+      .footer{
+        font-size: 0.8rem;
+    }
+
+    .website__link:link,
+    .website__link:active,
+    .website__link:visited{
+    color: var(--bright-color);
+
+    font-size: 0.8rem;
+    }
+
+    
+    .login__form,
+    .signup__form,
+    .forgetPassword__form,
+    .resetPassword__form{
+        width: 30rem;
+        font-size: 1rem;
+    }
+    
+    
+    .heading__secondary{
+        font-size: 1.4rem;
+    }
+
+    .form__input{
+        padding: 0.5rem;
+        font-size: 1rem;
+    
+    }
+    
+    .form__link:link,
+    .form__link:hover,
+    .form__link:active,
+    .form__link:visited{
+        font-size: 1rem;
+    }
+
+    .form__group{
+        margin: 2rem;
+        margin-top: 3rem;
+    }
+
+    .error__status{
+        font-size: 3rem;
+
+    }
+    
+    .error__msg{
+        font-size: 1.2rem;
+    }
+    
+    
+    .hr-separator {         
+        height: 6rem;          
+    }
+
+    .alert {
+        top: 5%;
+        left: 50%;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        padding: 1rem 5rem;
+    }
+
+
 }

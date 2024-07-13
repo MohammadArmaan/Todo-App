@@ -1,0 +1,10 @@
+header.header 
+    nav.nav 
+        ul.nav__list
+            li.list__icons
+                ion-icon(name='moon' class='theme-icons dark hidden')
+                ion-icon(name='sunny' class='theme-icons light')
+            if !user
+                a.nav__links.login__link(href='/login') Login/Sign up 
+            if user
+                a.nav__links.logout__link(href='#') Logout

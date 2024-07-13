@@ -1,0 +1,11 @@
+extends base
+
+block content
+  main.main
+    .error
+      .error__title
+        h2.heading__secondary Oh oh! Something went wrong! 
+    .error__information  
+        h2.error__status= status
+        hr.hr-separator
+        .error__msg= error

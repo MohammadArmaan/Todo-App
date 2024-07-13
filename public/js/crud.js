@@ -1,5 +1,6 @@
 /* disable-eslint */
 import axios from "axios"
+import { showAlert } from "./alerts";
 
 export const create = async (todo) => {
     try{
@@ -12,12 +13,13 @@ export const create = async (todo) => {
             }
         });
 
+        showAlert('success', 'Added Todo!');
         window.setTimeout(() => {
             location.reload();
         }, 500);
     }
     catch(err){
-        console.error(err);
+        showAlert('error', err.message);
     }
 }
 
@@ -31,12 +33,13 @@ export const update = async (todo, id) => {
             }
         });
 
+        showAlert('success', 'Updated Todo!');
         window.setTimeout(() =>{
             location.reload()
         }, 500);
     }
     catch(err){
-        console.error(err);
+        showAlert('error', err.message);
     }
 }
 
@@ -46,12 +49,13 @@ export const deleteOpp = async (id) => {
             method: 'DELETE',
             url: `/api/v1/todo/${id}`
         });
+        showAlert('success', 'Deleted Todo!');
         window.setTimeout(() => {
             location.reload();
         }, 500);
     }
     catch(err){
-        console.error(err);
+        showAlert('error', err.message);
     }
 
 }
@@ -70,7 +74,7 @@ export const checkboxChecked = async (completed, id) => {
         }, 500);
     }
     catch(err){
-        console.error(err);
+        showAlert('error', err.message);
     }
 
 }

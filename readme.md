@@ -1,9 +1,9 @@
 # Todo App
 
-This is a simple Todo application developed using MongoDB, Express.js, and Node.js.
+This is a Authenticated Todo application developed using MongoDB, Express.js, and Node.js.
 
 ## Description
-This Todo application allows users to manage their tasks efficiently. Users can add new todos, update existing ones, mark them as completed, and delete them when no longer needed. The backend is powered by MongoDB for data storage and Express.js to handle routing and API requests. Node.js serves as the runtime environment for the application.
+This Todo application allows users to manage their tasks efficiently. Users can add new todos, update existing ones, mark them as completed, and delete them when no longer needed. The backend is powered by MongoDB for data storage and Express.js to handle routing and API requests. Node.js serves as the runtime environment for the application. The User Authentication is required in order to use the application
 
 ## Technologies Used
 - MongoDB
@@ -11,6 +11,8 @@ This Todo application allows users to manage their tasks efficiently. Users can 
 - Node.js
 
 ## Features
+- Login or Signup to create new account
+- Forgot and Reset password page
 - Add new todos
 - Update existing todos
 - Mark todos as completed
@@ -24,9 +26,6 @@ This Todo application allows users to manage their tasks efficiently. Users can 
 - Click on the pencil icon to edit a todo.
 - Click on the trash icon to delete a todo.
 
-
-## Warning
-Please refrain from entering any personal or sensitive information as this application's data is globally accessible. Use it for demonstration and testing purposes only.
 
 ## Contributing
 Contributions are welcome! Please fork the repository and create a pull request with your improvements.
